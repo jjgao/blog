@@ -1,10 +1,11 @@
 ---
 layout: post
-title: A Conversation with ChatGPT: AI and Identity Crisis
+title: A Conversation with ChatGPT: AI and Human Meaning
+permalink: /2026/10/04/ai-and-human-meaning/
 date: 2026-10-04
 ---
 
-I had an AHA moment about the public anxiety around AI: underneath it, a lot of the fear feels like an identity crisis for humans.
+I had an AHA moment about the public anxiety around AI: underneath it, a lot of the fear feels like a crisis about what it means to be human.
 
 So I turned to ChatGPT for a conversation and tried to capture the core ideas in a cleaner form here.
 
