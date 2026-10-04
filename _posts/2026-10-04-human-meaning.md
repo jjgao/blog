@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Conversation with ChatGPT: AI and Human Meaning
+title: "A Conversation with ChatGPT — AI and Human Meaning"
 permalink: /2026/10/04/ai-and-human-meaning/
 date: 2026-10-04
 ---
