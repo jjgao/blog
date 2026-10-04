@@ -1,0 +1,7 @@
+title: jjgao blog
+description: Notes, essays, and trip writeups from jjgao.
+url: https://jjgao.github.io
+baseurl: /blog
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+plugins: []
