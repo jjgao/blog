@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Conversation with ChatGPT — AI and Human Meaning"
-permalink: /2026/10/04/ai-and-human-meaning/
+permalink: /2025/08/23/ai-and-human-meaning/
 date: 2025-08-23
 ---
 
