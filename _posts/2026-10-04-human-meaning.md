@@ -2,7 +2,7 @@
 layout: post
 title: "A Conversation with ChatGPT — AI and Human Meaning"
 permalink: /2026/10/04/ai-and-human-meaning/
-date: 2026-10-04
+date: 2025-08-23
 ---
 
 I had an AHA moment about the public anxiety around AI: underneath it, a lot of the fear feels like a crisis about what it means to be human.
