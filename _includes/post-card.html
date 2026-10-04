@@ -1,0 +1,15 @@
+<article class="post-card {% if include.compact %}compact{% endif %}">
+  <a class="post-card-link" href="{{ include.post.url | relative_url }}">
+    <p class="post-card-meta">
+      <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%b %d, %Y" }}</time>
+      {% if include.post.categories and include.post.categories.size > 0 %}
+        <span class="dot">•</span>
+        <span>{{ include.post.categories | join: ", " }}</span>
+      {% endif %}
+    </p>
+    <h3>{{ include.post.title }}</h3>
+    {% if include.post.excerpt %}
+      <p class="post-card-excerpt">{{ include.post.excerpt | strip_html | truncate: 180 }}</p>
+    {% endif %}
+  </a>
+</article>

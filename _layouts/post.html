@@ -1,12 +1,31 @@
 ---
 layout: default
 ---
-<article class="post">
-  <header class="post-header">
+<article class="post-card post-page">
+  <header class="post-header post-page-header">
+    <p class="eyebrow">Post</p>
     <h1>{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% if page.categories and page.categories.size > 0 %}
+        · {{ page.categories | join: ", " }}
+      {% endif %}
+    </p>
   </header>
-  <div class="post-content">
+  <div class="post-content prose">
     {{ content }}
   </div>
 </article>
+
+<section class="more-posts">
+  <div class="section-heading">
+    <p class="eyebrow">More posts</p>
+    <h2>Keep reading</h2>
+  </div>
+  <div class="post-grid compact-grid">
+    {% assign others = site.posts | where_exp: "post", "post.url != page.url" %}
+    {% for post in others limit: 3 %}
+      {% include post-card.html post=post compact=true %}
+    {% endfor %}
+  </div>
+</section>
