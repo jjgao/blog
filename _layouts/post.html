@@ -3,12 +3,13 @@ layout: default
 ---
 <article class="post-card post-page">
   <header class="post-header post-page-header">
-    <p class="eyebrow">Post</p>
     <h1>{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% assign words = content | strip_html | number_of_words %}
+      <span class="dot">·</span>{{ words | divided_by: 220 | plus: 1 }} min read
       {% if page.categories and page.categories.size > 0 %}
-        · {{ page.categories | join: ", " }}
+        <span class="dot">·</span>{{ page.categories | join: ", " }}
       {% endif %}
     </p>
   </header>

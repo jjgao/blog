@@ -5,6 +5,7 @@ date: 2026-04-16
 ---
 
 TL;DR: I used an AI assistant running on Claude, Codex, and GitHub Copilot to plan a family road trip through Zion, Page, and the Grand Canyon. The surprising part was that switching models barely changed anything. The useful part was everything around the model: memory, context, tools, and autonomy.
+{: .tldr}
 
 ## A moment on the Zion shuttle
 
