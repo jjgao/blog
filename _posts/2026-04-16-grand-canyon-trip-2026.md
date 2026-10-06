@@ -2,10 +2,19 @@
 layout: post
 title: I Used OpenClaw to Co-Pilot Our Family Vacation. Here's What I Learned.
 date: 2026-04-16
+byline: By JJ · Powered by OpenClaw
+footer_note: Written by JJ · April 2026 · Built with OpenClaw
 ---
 
 TL;DR: I used an AI assistant running on Claude, Codex, and GitHub Copilot to plan a family road trip through Zion, Page, and the Grand Canyon. The surprising part was that switching models barely changed anything. The useful part was everything around the model: memory, context, tools, and autonomy.
-{: .tldr}
+{: .lede}
+
+<div class="toc" markdown="1">
+In this post
+
+* TOC
+{:toc}
+</div>
 
 ## A moment on the Zion shuttle
 
@@ -91,19 +100,27 @@ That autonomy gap mattered more than model quality.
 
 ## Why the usual tools didn’t get me here
 
-Google is great at finding things that already exist. It doesn’t synthesize them into a plan that knows your family.
+<div class="callout" markdown="1">
+**Google** is great at finding things that already exist. It doesn’t synthesize them into a plan that knows your family.
+</div>
 
-ChatGPT and Claude are excellent at one-shot sessions, but they’re still basically stateless across time in the way that matters for real life.
+<div class="callout" markdown="1">
+**ChatGPT and Claude** are excellent at one-shot sessions, but they’re still basically stateless across time in the way that matters for real life.
+</div>
 
-Claude Code and Codex are powerful, but they’re aimed at a developer working at a desk, not a parent texting from a shuttle bus.
+<div class="callout" markdown="1">
+**Claude Code and Codex** are powerful, but they’re aimed at a developer working at a desk, not a parent texting from a shuttle bus.
+</div>
 
-OpenClaw sits in the middle of real life:
+<div class="callout" markdown="1">
+**OpenClaw** sits in the middle of real life:
 
 - persistent memory
 - Telegram-native messaging
 - filesystem access
 - real-world actions
 - ambient presence
+</div>
 
 The model underneath may be the same. The difference is everything around it.
 
@@ -128,8 +145,9 @@ My guess: the missing piece is infrastructure.
 
 The trip is just one example, but it’s a good one. The same models that power ChatGPT and Claude, wrapped in the right system, turned a chaotic family vacation into something my daughter called “organized.”
 
-That’s not a model improvement.
-It’s an infrastructure improvement.
+<div class="thesis" markdown="1">
+That’s not a model improvement.<br>It’s an infrastructure improvement.
+</div>
 
 And I think that’s where a lot of the real value in AI is going to come from next.
 

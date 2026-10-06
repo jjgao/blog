@@ -12,9 +12,11 @@ layout: default
         <span class="dot">·</span>{{ page.categories | join: ", " }}
       {% endif %}
     </p>
+    {% if page.byline %}<p class="post-byline">{{ page.byline }}</p>{% endif %}
   </header>
   <div class="post-content prose">
     {{ content }}
+    {% if page.footer_note %}<p class="post-footer-note">{{ page.footer_note }}</p>{% endif %}
   </div>
 </article>
 
