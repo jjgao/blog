@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "The Economy of Tokens: $50 vs. $2,400 in AI Code Generation with Claude Subscription vs. Usage"
+title: The Economy of Tokens
+subtitle: "$50 vs. $2,400 in AI Code Generation with Claude Subscription vs. Usage"
 date: 2026-10-07
 byline: By JJ
 footer_note: Written by JJ · October 2026 · Built with Claude Code and Claude Tag
