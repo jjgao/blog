@@ -440,3 +440,87 @@ pre { padding: 1rem; overflow: auto; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Editorial components (usable in any post) ---------- */
+
+/* Lede: opening summary with an accent bar. Markdown: `{: .lede}` under a paragraph. */
+.prose p.lede {
+  font-family: var(--font-serif);
+  font-size: 1.15em;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: none;
+  margin: 0 0 1.75rem;
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  border-image: linear-gradient(180deg, var(--accent), var(--accent-2)) 1;
+}
+
+/* Table of contents. Markdown: wrap `* TOC` + `{:toc}` in <div class="toc" markdown="1">. */
+.prose .toc {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  padding: 1.1rem 1.4rem;
+  margin: 0 0 2rem;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.prose .toc p { margin: 0 0 0.5rem; font-weight: 700; color: var(--accent); }
+.prose .toc ul { list-style: none; margin: 0; padding: 0; counter-reset: toc; }
+.prose .toc ul ul { display: none; }
+.prose .toc li { counter-increment: toc; margin: 0.3rem 0; padding: 0; }
+.prose .toc li::before { content: counter(toc) "."; color: var(--muted); display: inline-block; width: 1.6rem; }
+.prose .toc a { color: var(--text); text-decoration: none; }
+.prose .toc a:hover { color: var(--accent); text-decoration: underline; }
+
+/* Callout box. Markdown: <div class="callout" markdown="1"> ... </div> */
+.prose .callout {
+  font-family: var(--font-sans);
+  font-size: 0.97rem;
+  line-height: 1.6;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 14px;
+  background: var(--quote-bg);
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--border));
+}
+.prose .callout > :last-child { margin-bottom: 0; }
+.prose .callout p { margin: 0 0 0.5rem; }
+.prose .callout li { margin-bottom: 0.15rem; }
+.prose .callout strong { color: var(--accent); }
+
+/* Thesis banner: one big takeaway. Markdown: <div class="thesis" markdown="1"> ... </div> */
+.prose .thesis {
+  font-family: var(--font-sans);
+  margin: 2.5rem 0;
+  padding: 1.6rem 1.75rem;
+  border-radius: 18px;
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1.1rem, 1rem + 0.6vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: var(--shadow);
+}
+.prose .thesis p { margin: 0; }
+@media (prefers-color-scheme: dark) { .prose .thesis { color: #0b1020; } }
+
+/* Byline under the title */
+.post-byline { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.94rem; }
+.post-byline a { color: var(--accent); text-decoration: none; }
+.post-byline a:hover { text-decoration: underline; }
+
+/* Closing footer line for a post */
+.post-footer-note {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
