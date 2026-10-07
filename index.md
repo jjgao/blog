@@ -3,12 +3,6 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
-  <p class="eyebrow">Hello</p>
-  <h1>Hi, I’m jjgao.</h1>
-  <p class="lede">A place for essays, trip writeups, and the occasional note.</p>
-</section>
-
 <section class="section-block">
   <div class="section-heading">
     <p class="eyebrow">Latest</p>
