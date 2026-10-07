@@ -510,6 +510,7 @@ pre { padding: 1rem; overflow: auto; }
 @media (prefers-color-scheme: dark) { .prose .thesis { color: #0b1020; } }
 
 /* Byline under the title */
+.post-subtitle { margin: 0.5rem 0 0; color: var(--muted); font-size: 1.2rem; line-height: 1.4; }
 .post-byline { margin: 0.4rem 0 0; color: var(--muted); font-size: 0.94rem; }
 .post-byline a { color: var(--accent); text-decoration: none; }
 .post-byline a:hover { text-decoration: underline; }
